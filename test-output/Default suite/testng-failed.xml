@@ -5,6 +5,7 @@
     <classes>
       <class name="TestCases.T_LoginPage">
         <methods>
+          <include name="KillBrowser"/>
           <include name="GuruLogin"/>
           <include name="loginTest"/>
           <include name="initBrowserDriver"/>
