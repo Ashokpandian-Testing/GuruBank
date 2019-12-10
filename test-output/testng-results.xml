@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="43903" started-at="2019-12-10T15:06:34 IST" finished-at="2019-12-10T15:07:18 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="43903" started-at="2019-12-10T15:06:34 IST" finished-at="2019-12-10T15:07:18 IST">
+      <class name="TestCases.T_LoginPage">
+        <test-method status="PASS" signature="initBrowserDriver()[pri:0, instance:TestCases.T_LoginPage@551aa95a]" name="initBrowserDriver" is-config="true" duration-ms="24302" started-at="2019-12-10T15:06:34 IST" finished-at="2019-12-10T15:06:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowserDriver -->
+        <test-method status="PASS" signature="GuruLogin()[pri:0, instance:TestCases.T_LoginPage@551aa95a]" name="GuruLogin" is-config="true" duration-ms="10918" started-at="2019-12-10T15:06:59 IST" depends-on-methods="TestCases.TestBase.initBrowserDriver" finished-at="2019-12-10T15:07:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GuruLogin -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:TestCases.T_LoginPage@551aa95a]" name="loginTest" duration-ms="7219" started-at="2019-12-10T15:07:10 IST" finished-at="2019-12-10T15:07:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="KillBrowser()[pri:0, instance:TestCases.T_LoginPage@551aa95a]" name="KillBrowser" is-config="true" duration-ms="1427" started-at="2019-12-10T15:07:17 IST" finished-at="2019-12-10T15:07:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KillBrowser -->
+      </class> <!-- TestCases.T_LoginPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
