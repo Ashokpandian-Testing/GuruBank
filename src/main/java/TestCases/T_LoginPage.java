@@ -15,7 +15,7 @@ public class T_LoginPage extends TestBase{
 	@Test
 	@Parameters({"username","password"})
 	public static void loginTest(@Optional("as198184@gmail.com") String username, @Optional("Guru@2019") String password) {
-		Extentlog = ExtentReport.createTest(T_LoginPage.class.getName());
+		Extentlog = ExtentReport.createTest(Thread.currentThread().getStackTrace()[1].getMethodName());
 		PageFactory.initElements(driver, GuruPages.LoginPage.class);
 		LoginPage.txtUserName.sendKeys(username);
 		Extentlog.log(Status.PASS,"User Name : '"+username+"' is Entered");

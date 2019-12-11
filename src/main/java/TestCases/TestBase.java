@@ -13,6 +13,7 @@ import org.testng.TestNG;
 import org.testng.annotations.AfterTest;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.InetAddress;
 
 import org.apache.log4j.Logger;
@@ -52,7 +53,6 @@ public class TestBase {
 		htmlreporter.config().setReportName(getPropertyValue("ExtentReportTitle"));
 		htmlreporter.config().setTheme(Theme.STANDARD);
 		ExtentReport.setSystemInfo("Host Name", InetAddress.getLocalHost().getHostName());
-		ExtentReport.setSystemInfo("Host 2", System.getenv("HOSTNAME"));
 //		driver.get("http://demo.guru99.com/insurance/v1/index.php");		
 	}
 	
@@ -66,13 +66,15 @@ public class TestBase {
 	@AfterTest
 	public static void KillBrowser() throws IOException {
 		driver.quit();
+		ExtentReport.flush();
 		logger.info("'"+getPropertyValue("apploginurl")+"' Browser Closed");
 		
 	}
 	
 	
 	public static String getPropertyValue(String key) throws IOException {
-		FileInputStream Fis = new FileInputStream("config.properties");
+		//FileInputStream Fis = new FileInputStream("config.properties");
+		InputStream Fis = ClassLoader.getSystemResourceAsStream("config.properties");
 		Properties prop = new Properties();
 		prop.load(Fis);
 		String value = prop.getProperty(key);				
@@ -84,10 +86,11 @@ public class TestBase {
 		// Create a list of String 
 		List<String> suitefiles=new ArrayList<String>(); 
 		// Add xml file which you have to execute
-		suitefiles.add("testng.xml");
+		suitefiles.add(System.getProperty("user.dir")+"\\src\\main\\resources\\testng.xml");
 		// now set xml file for execution
 		testng.setTestSuites(suitefiles);
-		testng.run();
+		testng.run();		
+		
 	}
 	
 }

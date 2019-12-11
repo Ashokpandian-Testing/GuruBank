@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="GuruBank">
+	<test name="Functional Test">
+	<parameter name="username" value="as198184@gmail.com"/>
+	<parameter name="password" value="Guru@2019"/>
+		<classes>
+			<class name="TestCases.T_LoginPage" />
+		</classes>
+	</test>
+</suite>
