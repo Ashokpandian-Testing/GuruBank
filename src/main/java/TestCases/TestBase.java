@@ -86,7 +86,8 @@ public class TestBase {
 		// Create a list of String 
 		List<String> suitefiles=new ArrayList<String>(); 
 		// Add xml file which you have to execute
-		suitefiles.add(System.getProperty("user.dir")+"\\src\\main\\resources\\testng.xml");
+//		suitefiles.add(System.getProperty("user.dir")+"\\src\\main\\resources\\testng.xml");
+		suitefiles.add("testng.xml");
 		// now set xml file for execution
 		testng.setTestSuites(suitefiles);
 		testng.run();		

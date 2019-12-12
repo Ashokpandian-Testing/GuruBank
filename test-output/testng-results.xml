@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="GuruBank" duration-ms="45433" started-at="2019-12-11T18:45:59 IST" finished-at="2019-12-11T18:46:45 IST">
+  <suite name="GuruBank" duration-ms="52182" started-at="2019-12-12T15:09:39 IST" finished-at="2019-12-12T15:10:31 IST">
     <groups>
     </groups>
-    <test name="Functional Test" duration-ms="45433" started-at="2019-12-11T18:45:59 IST" finished-at="2019-12-11T18:46:45 IST">
+    <test name="Functional Test" duration-ms="52182" started-at="2019-12-12T15:09:39 IST" finished-at="2019-12-12T15:10:31 IST">
       <class name="TestCases.T_LoginPage">
-        <test-method status="PASS" signature="initBrowserDriver()[pri:0, instance:TestCases.T_LoginPage@5034c75a]" name="initBrowserDriver" is-config="true" duration-ms="14670" started-at="2019-12-11T18:45:59 IST" finished-at="2019-12-11T18:46:14 IST">
+        <test-method status="PASS" signature="initBrowserDriver()[pri:0, instance:TestCases.T_LoginPage@6d00a15d]" name="initBrowserDriver" is-config="true" duration-ms="30136" started-at="2019-12-12T15:09:39 IST" finished-at="2019-12-12T15:10:09 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowserDriver -->
-        <test-method status="PASS" signature="GuruLogin()[pri:0, instance:TestCases.T_LoginPage@5034c75a]" name="GuruLogin" is-config="true" duration-ms="15887" started-at="2019-12-11T18:46:14 IST" depends-on-methods="TestCases.TestBase.initBrowserDriver" finished-at="2019-12-11T18:46:30 IST">
+        <test-method status="PASS" signature="GuruLogin()[pri:0, instance:TestCases.T_LoginPage@6d00a15d]" name="GuruLogin" is-config="true" duration-ms="14309" started-at="2019-12-12T15:10:09 IST" depends-on-methods="TestCases.TestBase.initBrowserDriver" finished-at="2019-12-12T15:10:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GuruLogin -->
-        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:TestCases.T_LoginPage@5034c75a]" name="loginTest" duration-ms="12794" started-at="2019-12-11T18:46:30 IST" finished-at="2019-12-11T18:46:43 IST">
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:TestCases.T_LoginPage@6d00a15d]" name="loginTest" duration-ms="5612" started-at="2019-12-12T15:10:24 IST" finished-at="2019-12-12T15:10:29 IST">
           <params>
             <param index="0">
               <value>
@@ -31,7 +31,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="KillBrowser()[pri:0, instance:TestCases.T_LoginPage@5034c75a]" name="KillBrowser" is-config="true" duration-ms="2017" started-at="2019-12-11T18:46:43 IST" finished-at="2019-12-11T18:46:45 IST">
+        <test-method status="PASS" signature="KillBrowser()[pri:0, instance:TestCases.T_LoginPage@6d00a15d]" name="KillBrowser" is-config="true" duration-ms="2084" started-at="2019-12-12T15:10:29 IST" finished-at="2019-12-12T15:10:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- KillBrowser -->
